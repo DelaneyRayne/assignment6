@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
 /* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #ffeff5; /* Light pastel pink */
+    background: url(https://subtlepatterns.com/patterns/footer_lodyas.png); /* Subtle background texture */
     text-align: center;
     margin: 0;
     padding: 0;
@@ -9,16 +12,69 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #ffe4ec; /* Soft pink */
-    padding: 15px;
+    padding: 0;
+    margin: 0;
 }
 
-/* Navigation Text for "Home, Blogs, About" */
-nav a {
-    margin: 0 10px;
-    color: #9b5a67; /* Darker muted pink */
+/* Custom Navigation Bar (only change to header) */
+.nav {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background: #222;
+    padding: 0;
+    margin: 0;
+}
+
+.navItem, .navItem a {
+    display: inline-block;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navItem a {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(34,34,34,0.4);
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* Color Effects per Item */
+.navItem:nth-of-type(1) {
+    border-bottom: 2px solid #D60F3A;
+}
+.navItem:nth-of-type(1) a:hover {
+    background: #D60F3A;
+}
+
+.navItem:nth-of-type(2) {
+    border-bottom: 2px solid #8317AD;
+}
+.navItem:nth-of-type(2) a:hover {
+    background: #8317AD;
+}
+
+.navItem:nth-of-type(3) {
+    border-bottom: 2px solid #3116DE;
+}
+.navItem:nth-of-type(3) a:hover {
+    background: #3116DE;
+}
+
+.navItem:hover {
+    flex-grow: 3;
+    -webkit-flex-grow: 3;
 }
 
 /* Layout Styling */
@@ -33,6 +89,23 @@ nav a {
     background-color: #ffdee9; /* Light pink */
     padding: 10px;
     border-radius: 10px;
+}
+
+/* Sidebar Text List */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.sidebar li {
+    margin: 5px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #9b5a67;
+    font-weight: bold;
 }
 
 /* Main Content Area */
