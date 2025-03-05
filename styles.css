@@ -1,50 +1,24 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Sidebar Section - Trends & Tutorials */
-.sidebar {
-    width: 20%;
-    background-color: #ffdee9;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: left;
-}
-
-/* Sidebar Title */
-.sidebar h2 {
-    font-size: 22px;
-    color: #9b5a67;
-    margin-bottom: 15px;
-}
-
-/* Trend Links - Use modern list style */
+/* Trends & Tutorials Links - Keep original box, just style the text */
 .sidebar ul {
     overflow: auto;
     list-style-type: none;
     padding: 0;
-    background-color: #f8c8d8;
-    border-radius: 5px;
 }
 
-/* Each List Item */
 .sidebar li {
-    height: 40px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 20px;
+    padding: 0 15px;
     border-bottom: 1px solid #d8a9b1;
 }
 
-/* Remove border from last item */
 .sidebar li:last-child {
     border-bottom: none;
 }
 
-/* Link Styling */
+/* Text Links */
 .sidebar li a {
     text-decoration: none;
     color: #9b5a67;
@@ -59,29 +33,12 @@
     transition: all 0.5s ease;
 }
 
-/* Hover Effect */
 .sidebar li a:hover {
     color: #000;
     font-weight: bold;
 }
 
-/* Active Link - Optional if you want to highlight current page */
 .sidebar li.active a {
     font-weight: bold;
     color: #333;
-}
-
-/* Ad Image */
-.ad {
-    margin-top: 15px;
-    background-color: #f8c8d8;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.ad img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
 }
